@@ -1,0 +1,36 @@
+secret_key_base: VWA_Bdq2m6eoM7iMMfZkyqfKZD-WyYCvqDlfd_a5TDs
+port: 3000
+name: todo
+
+logging:
+  severity: debug
+  colorize: true
+  filter:
+    - password
+    - confirm_password
+  context:
+    - request
+    - session
+    - headers
+    - cookies
+    - params
+
+host: 0.0.0.0
+port_reuse: false
+process_count: 1
+# ssl_key_file:
+# ssl_cert_file:
+redis_url: "redis://localhost:6379"
+database_url: postgres://yotaro:@localhost:5432/todo_test
+auto_reload: false
+
+session:
+  key: amber.session
+  store: signed_cookie
+  expires: 0
+
+smtp:
+  enabled: false
+
+secrets:
+  description: Store your development secrets credentials and settings here.
