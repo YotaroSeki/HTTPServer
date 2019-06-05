@@ -18,8 +18,8 @@ logging:
 host: 0.0.0.0
 port_reuse: true
 process_count: 1
-# ssl_key_file:
-# ssl_cert_file:
+ssl_key_file:
+ssl_cert_file:
 redis_url: "redis://localhost:6379"
 database_url: postgres://yotaro:@localhost:5432/todo_development
 auto_reload: true
